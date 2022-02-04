@@ -1,0 +1,62 @@
+// to do 1. use variables for the colors
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 350px;
+  // max-height: 500px;
+  display: flex;
+  flex-direction: column;
+
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  // img {
+  // heights are auto by default, setting the height, I'm running into overflowing text issues 
+  // height: auto;
+  // width: 100%;
+  // I could comment all this out because by default everything should fit to the card
+  // margin: 0;
+  // max-width: 300px;
+  // max-height: 300px;
+  // }
+
+  &__container {
+    // The padding isn't included in the width of the card. Hence having the width of the p-tag not taken into account
+    padding: 2px 16px;
+    // width: 100%;
+
+    p {
+      overflow-wrap: break-word;
+    }
+
+  }
+
+  // styling the buttons
+
+  &__button-clicks {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+    &__primary {
+      width: 100px;
+      height: 40px;
+      background-color: black;
+      color: #fff;
+    }
+
+
+    &__secondary {
+      width: 100px;
+      height: 40px;
+      border: 1px solid black;
+      margin-left: 10px;
+    }}}
